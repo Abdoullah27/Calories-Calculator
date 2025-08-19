@@ -1,0 +1,188 @@
+        /* Reset some default styles */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #333333;
+        }
+
+        h1 {
+            color: #333333;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            text-align: left;
+        }
+
+        .type-buttons {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .type {
+            margin: 5px;
+            padding: 10px 20px;
+            background-color: #e0e0e0;
+            color: #000000;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+            outline: none;
+        }
+
+        .type:hover {
+            background-color: #ced4da;
+            transform: scale(1.05);
+        }
+
+        .type.active {
+            background-color: #4caf50;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        select,
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 15px 0;
+            border-radius: 5px;
+            border: 1px solid #cccccc;
+            font-size: 16px;
+            display: block;
+        }
+
+        select:disabled {
+            background-color: #e9ecef;
+            color: #6c757d;
+            cursor: not-allowed;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+            display: block;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        button:disabled {
+            background-color: #a5d6a7;
+            cursor: not-allowed;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #333333;
+            text-align: center;
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .message {
+            background-color: #d9edf7;
+            color: #31708f;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .message.error {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+
+        .message.success {
+            background-color: #d4edda;
+            color: #155724;
+        }
+
+        footer {
+            background-color: #333333;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+
+        .logo img {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            padding: 10px;
+            border-radius: 10%;
+            margin-bottom: 30px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+                margin: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .type-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .type {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    
